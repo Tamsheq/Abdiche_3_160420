@@ -1,0 +1,57 @@
+@use "sass:color";
+
+$color-primary: #9356DC;
+$color-secondary: #FF79DA;
+$color-tertiary: #99E2D0;
+$appPadding: 1rem;
+
+body, html {
+    margin: 0;
+    font-family: 'Roboto', sans-serif ;
+    scroll-behavior: smooth;
+}
+
+@mixin button($type) {
+    border: 0;
+    border-radius: 100px;
+    padding: 12px 24px;
+    font-size: 18px;
+    font-weight: 500;
+    color: white;
+    background-color: rgb(104, 104, 104);
+    background-image: linear-gradient(0deg, color.scale($color-primary, $alpha: -10%) 0%, color.scale($color-secondary, $alpha: -10%) 100%);
+    cursor: pointer;
+    transition-duration: 0.25s;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.25);
+
+    &:hover {
+        background-color: white;
+        box-shadow: 4px 4px 4px 10px rgba(0, 0, 0, 0.50);
+    }
+
+    a {
+        text-decoration: none;
+        color: inherit;
+    }   
+}
+
+.container {
+    margin: auto;
+    max-width: 1280px;
+    position: relative;
+}
+
+.header {
+    padding: $appPadding;
+    position: relative;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.25);
+    z-index: 1000;
+
+    &_logo {
+        font-family: "shrikhand", "cursive";
+        text-align: center;
+        margin: 0;
+        
+    }
+}
+

@@ -1,0 +1,20 @@
+{
+  "name": "p3_abdiche_raphael",
+  "version": "1.0.0",
+  "description": "Partie 3 Openclassrooms",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "sass --watch style/sass/main.scss:./style/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Tamsheq/P3_abdiche_raphael.git"
+  },
+  "author": "Raphael Abdiche",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Tamsheq/P3_abdiche_raphael/issues"
+  },
+  "homepage": "https://github.com/Tamsheq/P3_abdiche_raphael#readme"
+}
