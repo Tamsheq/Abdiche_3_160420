@@ -81,7 +81,7 @@
   }
   
   .operation {
-    padding: $appPadding;
+    padding: ( $appPadding + 1rem ) $appPadding;
 
     &_title {
       margin-top: 0;
@@ -130,5 +130,80 @@
     &_icon {
         margin-right: 16px;
         color: #7e7e7e;
+    }
+  }
+
+  .restaurants {
+    background-color: #f6f6f6;
+    padding: ($appPadding + 1rem) $appPadding;
+  }
+
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    column-gap: 24px;
+    row-gap: 24px;
+  }
+
+  .card {
+    display: block;
+    position: relative;
+    border-radius: 16px;
+    background-color: white;
+    text-decoration: none;
+    color: inherit;
+
+    &_img {
+      object-fit: cover;
+      border: transparent solid 0px;
+      border-radius: 16px 16px 0 0;
+      box-shadow: none;
+      height: 12rem;
+      width: 100%;  
+    }
+
+    &_badge {
+      position: absolute;
+      background-color: $color-tertiary;
+      color: darken($color-tertiary, 50%);
+      padding: 8px;
+      border-radius: 2px;
+      top: 16px;
+      right: 12px;
+    }
+
+    &_footer {
+      display: flex;
+      align-items: center;
+      position: relative;
+      padding: 16px;
+    }
+
+    &_content {
+      flex: 1;
+    }
+
+    &_title {
+      margin: 0;
+      margin-bottom: 4px;
+    }
+
+    &_subtitle {
+      margin: 0;
+    }
+
+    &_btn {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 24px;
+      width: 24px;
+      background-color: transparent;
+      border: transparent solid 0;
+      padding: 0;
+    }
+
+    &_like {
+      background-color: white!important;
     }
   }
