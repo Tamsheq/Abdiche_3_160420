@@ -113,7 +113,7 @@ body, html {
   margin: 0;
 }
 .search_subtitle {
-  margin: 24px;
+  margin: 24px 0;
   font-weight: 300;
 }
 .search_btn {
@@ -148,6 +148,7 @@ body, html {
   margin: 0;
   padding: 0;
   list-style: none;
+  counter-reset: compteListe;
 }
 .operation_list {
   display: flex;
@@ -157,6 +158,29 @@ body, html {
   background-color: #f6f6f6;
   border-radius: 20px;
   box-shadow: 2px 2px 2px 3px rgba(0, 0, 0, 0.125);
+}
+.operation_list:first-child {
+  margin-top: 0;
+}
+.operation_list:last-child {
+  margin-bottom: 0;
+}
+.operation_list::before {
+  counter-increment: compteListe 1;
+  content: counter(compteListe) " ";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  background-color: #9356DC;
+  height: 24px;
+  width: 24px;
+  border-radius: 100px;
+  left: -12px;
+}
+.operation_icon {
+  margin-right: 16px;
+  color: #7e7e7e;
 }
 
 /*# sourceMappingURL=style.css.map */
