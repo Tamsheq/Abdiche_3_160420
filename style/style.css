@@ -93,7 +93,7 @@ body, html {
   display: flex;
   justify-content: center;
   padding: 1.25rem 1rem;
-  background-color: #ececec;
+  background-color: #eaeaea;
   font-size: 1.2rem;
   position: relative;
 }
@@ -107,7 +107,7 @@ body, html {
 .search {
   text-align: center;
   padding: 32px;
-  background-color: #f4f4f4;
+  background-color: #f6f6f6;
 }
 .search_title {
   margin: 0;
@@ -157,7 +157,7 @@ body, html {
   padding: 24px;
   background-color: #f6f6f6;
   border-radius: 20px;
-  box-shadow: 2px 2px 2px 3px rgba(0, 0, 0, 0.125);
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.125);
 }
 .operation_list:first-child {
   margin-top: 0;
@@ -177,6 +177,7 @@ body, html {
   width: 24px;
   border-radius: 100px;
   left: -12px;
+  color: white;
 }
 .operation_icon {
   margin-right: 16px;

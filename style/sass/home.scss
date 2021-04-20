@@ -48,7 +48,7 @@
     display: flex;
     justify-content: center;
     padding: 1.25rem $appPadding;
-    background-color: rgb(236, 236, 236);
+    background-color: rgb(234, 234, 234);
     font-size: 1.2rem;
     position: relative;
   
@@ -64,7 +64,7 @@
   .search {
       text-align: center;
       padding:  32px;
-      background-color: rgb(244, 244, 244);
+      background-color: rgb(246, 246, 246);
 
     &_title {
         margin: 0;
@@ -101,7 +101,7 @@
       padding: 24px;
       background-color: #f6f6f6;
       border-radius: 20px;
-      box-shadow: 2px 2px 2px 3px rgba(0, 0, 0, 0.125);
+      box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.125);
       
       &:first-child {
         margin-top: 0;
@@ -123,6 +123,7 @@
         width: 24px;
         border-radius: 100px;
         left: -12px;
+        color: white;
       }
     }
     
