@@ -50,6 +50,50 @@ body, html {
   margin: 0;
 }
 
+.menu_btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+  background-color: transparent;
+  height: 24px;
+  width: 24px;
+  border: transparent 0px solid;
+  padding: 0;
+  background-color: black;
+}
+.menu_btn:hover::before {
+  opacity: 1;
+}
+.menu_btn::before {
+  opacity: 0;
+  transition: 0.5s;
+  background: linear-gradient(0deg, #9356DC 0%, #FF79DA 100%);
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+.menu_like {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition-duration: 0.25s;
+  background-color: #f6f6f6;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  mix-blend-mode: lighten;
+}
+.menu_btn:hover .menu_like--noBg {
+  opacity: 0;
+}
+
 .loader {
   position: fixed;
   height: 100%;
