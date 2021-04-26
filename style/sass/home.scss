@@ -178,6 +178,8 @@
     align-items: center;
     position: relative;
     padding: 16px;
+
+    @include likeButton;
   }
 
   &_content {
@@ -194,58 +196,3 @@
   }
 }
 
-.menu {
-
-  &_btn {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      position: relative;
-      cursor: pointer;
-      background-color: transparent;
-      height: 24px;
-      width: 24px;
-      border: transparent 0px solid;
-      padding: 0;
-      
-      &:hover::before {
-          opacity: 1; 
-  }
-}
-
-
-
-  &_like {
-      display:flex;
-      align-items:center;
-      justify-content:center;
-      transition-duration: .25s;
-      position: absolute;
-      top: 0;
-      left: 0;
-      
-      &--bg {
-        opacity: 0;
-        background-image: linear-gradient(-4deg, $color-secondary, $color-primary );
-        -webkit-background-clip: text;
-        color: transparent;
-      }
-
-      &--noBg {
-        color: #4b4b4b;
-      }
-
-  }
-
-  &_btn:hover {
-      .menu_like {
-        &--noBg {
-          opacity: 0;
-        }
-
-        &--bg {
-          opacity: 1;
-        }
-      }
-  }
-}
