@@ -53,6 +53,11 @@ body, html {
 .footer {
   background-color: #353535;
 }
+@media screen and (min-width: 1024px) {
+  .footer {
+    padding-left: 80px;
+  }
+}
 .footer_container {
   display: flex;
   flex-direction: column;
@@ -107,6 +112,14 @@ body, html {
 
 .cardImage {
   width: 100%;
+}
+@media screen and (min-width: 1024px) {
+  .cardImage {
+    max-width: 100%;
+    max-height: 512px;
+    width: 100%;
+    object-fit: cover;
+  }
 }
 
 .menus {
@@ -193,6 +206,12 @@ body, html {
   display: grid;
   background-color: #f6f6f6;
   margin-top: -64px;
+}
+@media screen and (min-width: 1024px) {
+  .menusCards {
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 16px;
+  }
 }
 
 .menusCard {
@@ -412,6 +431,11 @@ body, html {
   list-style: none;
   counter-reset: compteListe;
 }
+@media screen and (min-width: 1024px) {
+  .operation_lists {
+    display: flex;
+  }
+}
 .operation_count {
   display: flex;
   justify-content: center;
@@ -432,6 +456,16 @@ body, html {
   background-color: #f6f6f6;
   border-radius: 20px;
   box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.125);
+}
+@media screen and (min-width: 1024px) {
+  .operation_list {
+    margin: 0;
+    margin-left: 32px;
+    flex: 1;
+  }
+  .operation_list:first-child {
+    margin-left: 12px;
+  }
 }
 .operation_list:first-child {
   margin-top: 0;
@@ -454,6 +488,11 @@ body, html {
   grid-template-columns: repeat(1, 1fr);
   column-gap: 24px;
   row-gap: 24px;
+}
+@media screen and (min-width: 1024px) {
+  .cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 .card {

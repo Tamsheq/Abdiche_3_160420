@@ -61,6 +61,10 @@ body, html {
 .footer {
   background-color: #353535;
 
+  @media screen and (min-width: 1024px) {
+   padding-left: 80px;   
+  }
+
   &_container {
     display: flex;
     flex-direction: column;

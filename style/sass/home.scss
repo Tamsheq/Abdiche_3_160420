@@ -92,6 +92,10 @@
     padding: 0;
     list-style: none;
     counter-reset: compteListe;
+
+    @media screen and (min-width: 1024px) {
+      display: flex;
+    }
   }
 
   &_count {
@@ -115,6 +119,16 @@
     background-color: #f6f6f6;
     border-radius: 20px;
     box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.125);
+
+    @media screen and (min-width: 1024px) {
+      margin: 0;
+      margin-left: 32px;
+      flex: 1;
+
+      &:first-child {
+        margin-left: 12px;
+      }
+    }
     
     &:first-child {
       margin-top: 0;
@@ -122,9 +136,7 @@
     
     &:last-child {
       margin-bottom: 0;
-    }
-    
-    
+    } 
   }
   
   &_icon {
@@ -143,6 +155,10 @@
   grid-template-columns: repeat(1, 1fr);
   column-gap: 24px;
   row-gap: 24px;
+
+  @media screen and (min-width: 1024px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 .card {
