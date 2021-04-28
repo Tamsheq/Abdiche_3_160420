@@ -32,7 +32,7 @@ body, html {
   scroll-behavior: smooth;
 }
 
-.container {
+.footer_container {
   margin: auto;
   max-width: 1280px;
   position: relative;
@@ -50,13 +50,18 @@ body, html {
   margin: 0;
 }
 
+@media screen and (min-width: 1024px) {
+  .footer_container {
+    position: relative;
+    margin: 0 100px 0 100px;
+  }
+}
+
 .footer {
   background-color: #353535;
-}
-@media screen and (min-width: 1024px) {
-  .footer {
-    padding-left: 80px;
-  }
+  /* @media screen and (min-width: 1024px) {
+    padding-left: 80px;   
+   } */
 }
 .footer_container {
   display: flex;
@@ -127,6 +132,12 @@ body, html {
   background-color: #f6f6f6;
   z-index: 1;
   position: relative;
+}
+@media screen and (min-width: 1024px) {
+  .menus {
+    /* margin: 0 310px 0 310px; */
+    margin: 0 100px 0 100px;
+  }
 }
 .menus_header {
   /* display: flex;

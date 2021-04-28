@@ -38,7 +38,7 @@ body, html {
     }   
 }
 
-.container {
+.footer_container {
     margin: auto;
     max-width: 1280px;
     position: relative;
@@ -58,12 +58,19 @@ body, html {
     }
 }
 
+.footer_container {
+  @media screen and (min-width: 1024px) {
+  position: relative;
+  margin: 0 100px 0 100px;
+  }
+}
+
 .footer {
   background-color: #353535;
 
-  @media screen and (min-width: 1024px) {
+ /* @media screen and (min-width: 1024px) {
    padding-left: 80px;   
-  }
+  } */
 
   &_container {
     display: flex;
@@ -161,4 +168,3 @@ body, html {
     }
   }
 }
-
