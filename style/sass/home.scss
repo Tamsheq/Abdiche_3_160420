@@ -124,6 +124,7 @@
       margin: 0;
       margin-left: 32px;
       flex: 1;
+      justify-content: center;
 
       &:first-child {
         margin-left: 12px;
@@ -148,6 +149,14 @@
 .restaurants {
   background-color: #f6f6f6;
   padding: 2rem $appPadding;
+
+  &_container {
+    @media screen and (min-width: 1024px) {
+      position: relative;
+      margin: 0 100px 0 100px;
+      border-radius: 42px 42px 0 0;
+    }
+  }
 }
 
 .cards {

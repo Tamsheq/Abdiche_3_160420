@@ -32,12 +32,6 @@ body, html {
   scroll-behavior: smooth;
 }
 
-.footer_container {
-  margin: auto;
-  max-width: 1280px;
-  position: relative;
-}
-
 .header {
   padding: 1rem;
   position: relative;
@@ -48,13 +42,6 @@ body, html {
   font-family: "shrikhand", "cursive";
   text-align: center;
   margin: 0;
-}
-
-@media screen and (min-width: 1024px) {
-  .container {
-    position: relative;
-    margin: 0 100px 0 100px;
-  }
 }
 
 .footer {
@@ -480,6 +467,7 @@ body, html {
     margin: 0;
     margin-left: 32px;
     flex: 1;
+    justify-content: center;
   }
   .operation_list:first-child {
     margin-left: 12px;
@@ -499,6 +487,13 @@ body, html {
 .restaurants {
   background-color: #f6f6f6;
   padding: 2rem 1rem;
+}
+@media screen and (min-width: 1024px) {
+  .restaurants_container {
+    position: relative;
+    margin: 0 100px 0 100px;
+    border-radius: 42px 42px 0 0;
+  }
 }
 
 .cards {
