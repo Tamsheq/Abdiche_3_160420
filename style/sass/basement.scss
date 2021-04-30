@@ -1,174 +1,175 @@
 @use "sass:color";
 
-$color-primary: #9356DC;
-$color-secondary: #FF79DA;
-$color-tertiary: #99E2D0;
+$color-primary: #9356dc;
+$color-secondary: #ff79da;
+$color-tertiary: #99e2d0;
 $appPadding: 1rem;
 $breakpoint: 1024px;
 
-body, html {
-    margin: 0;
-    font-family: 'Roboto', sans-serif ;
-    scroll-behavior: smooth;
+body,
+html {
+	margin: 0;
+	font-family: "Roboto", sans-serif;
+	scroll-behavior: smooth;
 }
 
 @mixin button {
-    border: 0;
-    border-radius: 100px;
-    padding: 0 24px;
-    font-size: 16px;
-    font-weight: 400;
-    color: white;
-    background-image: linear-gradient(-4deg, $color-primary, $color-secondary );
-    cursor: pointer;
-    transition-duration: 0.25s;
-    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.25);
-    height: 50px;
-    display: inline-flex;
-    align-items: center;
-    line-height: 20px;
+	border: 0;
+	border-radius: 100px;
+	padding: 0 24px;
+	font-size: 16px;
+	font-weight: 400;
+	color: white;
+	background-image: linear-gradient(-4deg, $color-primary, $color-secondary);
+	cursor: pointer;
+	transition-duration: 0.25s;
+	box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.25);
+	height: 50px;
+	display: inline-flex;
+	align-items: center;
+	line-height: 20px;
 	position: relative;
-    overflow: hidden;
+	overflow: hidden;
 
-    &:hover {
-        box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.50);
+	&:hover {
+		box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
 
 		&:before {
 			opacity: 0.5;
 		}
-    }
+	}
 
-    &:before {
-        background-color: white;
-        content: "";
-        width: 100%;
-        height: 100%;
-        position: absolute;
-        top: 0;
-        left: 0;
-        opacity: 0;
+	&:before {
+		background-color: white;
+		content: "";
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		top: 0;
+		left: 0;
+		opacity: 0;
 		transition: 0.25s opacity;
-    }
+	}
 
-    a {
-        text-decoration: none;
-        color: inherit;
-    }   
+	a {
+		text-decoration: none;
+		color: inherit;
+	}
 }
 
 .header {
-    padding: $appPadding;
-    position: relative;
-    box-shadow: 0 0 8px rgba(0, 0, 0, 0.25);
-    z-index: 1000;
+	padding: $appPadding;
+	position: relative;
+	box-shadow: 0 0 8px rgba(0, 0, 0, 0.25);
+	z-index: 1000;
 
-    &_logo {
-        display: flex;
-        height: 30px;
-        margin: auto;
-    }
+	&_logo {
+		display: flex;
+		height: 30px;
+		margin: auto;
+	}
 }
 
 .container {
-  max-width: 1280px;
-  margin: auto;
+	max-width: 1280px;
+	margin: auto;
 }
 
 .footer {
-  background-color: #353535;
-  padding: 25px 20px 35px 25px;
+	background-color: #353535;
+	padding: 25px 20px 35px 25px;
 
-  @media screen and (min-width: $breakpoint) { 
-    padding: 25px 0 35px 0;
-  }
+	@media screen and (min-width: $breakpoint) {
+		padding: 25px 0 35px 0;
+	}
 
-  &_logo {
-    color: white;
-    font-family: "Shrikhand", "cursive";
-    margin: 0;
-    font-size: 19px;
-    margin-bottom: 16px;
-  }
+	&_logo {
+		color: white;
+		font-family: "Shrikhand", "cursive";
+		margin: 0;
+		font-size: 19px;
+		margin-bottom: 16px;
+	}
 
-  &_column {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
+	&_column {
+		list-style: none;
+		padding: 0;
+		margin: 0;
+	}
 
-  &_title {
-    margin: 8px 0;
+	&_title {
+		margin: 8px 0;
 
-    &:first-child {
-      margin-top: 0;
-    }
+		&:first-child {
+			margin-top: 0;
+		}
 
-    &:last-child {
-    margin-bottom: 0;
-    }
-  }
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
 
-  &_link {
-    color: white;
-    text-decoration: none;
+	&_link {
+		color: white;
+		text-decoration: none;
 
-    &:hover {
-      text-decoration: underline;
-    }
-  }
+		&:hover {
+			text-decoration: underline;
+		}
+	}
 
-  &_icon {
-    width: 19px;
-    margin-right: 8px;
-  }
+	&_icon {
+		width: 19px;
+		margin-right: 8px;
+	}
 }
 
 @mixin likeButton {
-  .like_button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    cursor: pointer;
-    background-color: transparent;
-    height: 24px;
-    width: 24px;
-    border: transparent 0px solid;
-    padding: 0;
-    
-    &:hover {
-      opacity: 1;
+	.like_button {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		position: relative;
+		cursor: pointer;
+		background-color: transparent;
+		height: 24px;
+		width: 24px;
+		border: transparent 0px solid;
+		padding: 0;
 
-      i {
-        &.menu_like--noBg {
-          opacity: 0;
-        }
+		&:hover {
+			opacity: 1;
 
-        &.menu_like--bg {
-          opacity: 1;
-        }
-      }
-    }
+			i {
+				&.menu_like--noBg {
+					opacity: 0;
+				}
 
-    i {
-      display:flex;
-      align-items:center;
-      justify-content:center;
-      transition-duration: .25s;
-      position: absolute;
-      top: 0;
-      left: 0;
-        
-      &.menu_like--bg {
-        opacity: 0;
-        background-image: linear-gradient(-4deg, $color-secondary, $color-primary );
-        -webkit-background-clip: text;
-        color: transparent;
-      }
+				&.menu_like--bg {
+					opacity: 1;
+				}
+			}
+		}
 
-      &.menu_like--noBg {
-        color: #4b4b4b;
-      }
-    }
-  }
+		i {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			transition-duration: 0.25s;
+			position: absolute;
+			top: 0;
+			left: 0;
+
+			&.menu_like--bg {
+				opacity: 0;
+				background-image: linear-gradient(-4deg, $color-secondary, $color-primary);
+				-webkit-background-clip: text;
+				color: transparent;
+			}
+
+			&.menu_like--noBg {
+				color: #4b4b4b;
+			}
+		}
+	}
 }

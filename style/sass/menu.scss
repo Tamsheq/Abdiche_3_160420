@@ -1,6 +1,6 @@
 .header {
     &--buttonBack {
-        position:relative
+        position: relative;
     }
 
     &_arrow {
@@ -23,7 +23,7 @@
         max-height: 512px;
         width: 100%;
         object-fit: cover;
-      }
+    }
 }
 
 .menus {
@@ -37,7 +37,7 @@
         display: flex;
         transform: translateY(-50px);
         border-radius: 42px 42px 0 0;
-        background-color: #F6F6F6;
+        background-color: #f6f6f6;
         padding: 16px 32px 0 16px;
         align-items: center;
         justify-content: space-between;
@@ -51,7 +51,6 @@
         align-items: center;
         justify-content: space-between;
         font-weight: 400;
-        
     }
 
     &_btn {
@@ -76,7 +75,7 @@
     @media screen and (min-width: $breakpoint) {
         grid-template-columns: repeat(3, 1fr);
         column-gap: 16px;
-      }
+    }
 }
 
 .menusCard {
@@ -95,11 +94,11 @@
         }
 
         &_2 {
-            animation-delay: 1s; 
+            animation-delay: 1s;
         }
 
         &_3 {
-            animation-delay: 1.5s; 
+            animation-delay: 1.5s;
         }
     }
 
@@ -130,8 +129,8 @@
     overflow: hidden;
     cursor: pointer;
     max-width: 100%;
-    animation: itemAppear .6s;
-    animation-timing-function: cubic-bezier(.5,1.58,.34,.82);
+    animation: itemAppear 0.6s;
+    animation-timing-function: cubic-bezier(0.5, 1.58, 0.34, 0.82);
     animation-fill-mode: both;
     padding: 15px;
 
@@ -166,11 +165,11 @@
     &:hover &_validate {
         margin-right: -1rem;
     }
-    
+
     &_validateIcon {
-        display:flex;
-        align-items:center;
-        justify-content:center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
         height: 26px;
         width: 26px;
         background-color: white;
@@ -186,7 +185,6 @@
     &_icon {
         color: $color-tertiary;
     }
-
 }
 
 .wrapBtn {
@@ -194,9 +192,9 @@
     text-decoration: none;
     justify-content: center;
     padding: 48px 0;
-  }
-  
-  .commandBtn {
+}
+
+.commandBtn {
     @include button;
     cursor: pointer;
-  }
+}
