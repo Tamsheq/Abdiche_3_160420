@@ -8,9 +8,11 @@
 @keyframes popmenus {
   0% {
     opacity: 0;
+    top: 50px;
   }
 
   100% {
     opacity: 1;
+    top: 0;
   }
 }

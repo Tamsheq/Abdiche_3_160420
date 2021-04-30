@@ -83,15 +83,23 @@
     max-width: 100%;
     overflow: hidden;
     padding: 0 16px;
-    animation: 2s popmenus;
+    opacity: 0;
+    position: relative;
+    animation: 1s popmenus;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
 
     &.popmenus {
+        &_1 {
+            animation-delay: 0.5s;
+        }
+
         &_2 {
-            animation-delay: 2.5s;
+            animation-delay: 1s; 
         }
 
         &_3 {
-            animation-delay: 5s;
+            animation-delay: 1.5s; 
         }
     }
 
