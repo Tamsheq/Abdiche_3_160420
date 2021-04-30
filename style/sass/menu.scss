@@ -18,7 +18,7 @@
 .cardImage {
     width: 100%;
 
-    @media screen and (min-width: 1024px) {
+    @media screen and (min-width: $breakpoint) {
         max-width: 100%;
         max-height: 512px;
         width: 100%;
@@ -32,17 +32,7 @@
     z-index: 1;
     position: relative;
 
-    @media screen and (min-width: 1024px) {
-        /* margin: 0 310px 0 310px; */
-        margin: 0 100px 0 100px;
-    }
-
     &_header {
-       /* display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 16px 32px 0 16px;
-        border-radius: 20px; */
         position: relative;
         display: flex;
         transform: translateY(-50px);
@@ -83,7 +73,7 @@
     background-color: #f6f6f6;
     margin-top: -64px;
 
-    @media screen and (min-width: 1024px) {
+    @media screen and (min-width: $breakpoint) {
         grid-template-columns: repeat(3, 1fr);
         column-gap: 16px;
       }
@@ -93,6 +83,17 @@
     max-width: 100%;
     overflow: hidden;
     padding: 0 16px;
+    animation: 2s popmenus;
+
+    &.popmenus {
+        &_2 {
+            animation-delay: 2.5s;
+        }
+
+        &_3 {
+            animation-delay: 5s;
+        }
+    }
 
     &_title {
         text-transform: uppercase;

@@ -93,10 +93,10 @@
     list-style: none;
     counter-reset: compteListe;
 
-    @media screen and (min-width: 1024px) {
+    @media screen and (min-width: $breakpoint) {
       display: flex;
+    }
   }
-}
 
   &_count {
     display: flex;
@@ -120,7 +120,7 @@
     border-radius: 20px;
     box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.125);
 
-    @media screen and (min-width: 1024px) {
+    @media screen and (min-width: $breakpoint) {
       margin: 0;
       margin-left: 32px;
       flex: 1;
@@ -149,14 +149,6 @@
 .restaurants {
   background-color: #f6f6f6;
   padding: 2rem $appPadding;
-
-  &_container {
-    @media screen and (min-width: 1024px) {
-      position: relative;
-      margin: 0 100px 0 100px;
-      border-radius: 42px 42px 0 0;
-    }
-  }
 }
 
 .cards {
@@ -165,7 +157,7 @@
   column-gap: 24px;
   row-gap: 24px;
 
-  @media screen and (min-width: 1024px) {
+  @media screen and (min-width: $breakpoint) {
     grid-template-columns: repeat(2, 1fr);
   }
 }
