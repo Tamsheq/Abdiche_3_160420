@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/Tamsheq/P3_abdiche_raphael/issues"
   },
-  "homepage": "https://github.com/Tamsheq/P3_abdiche_raphael#readme"
+  "homepage": "https://github.com/Tamsheq/P3_abdiche_raphael#readme",
+  "dependencies": {
+    "sass": "^1.32.12"
+  }
 }
