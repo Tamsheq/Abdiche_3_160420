@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @keyframes loader {
   100% {
     opacity: 0;
@@ -14,6 +15,7 @@
     top: 0;
   }
 }
+/* mes variables */
 body,
 html {
   margin: 0;
@@ -21,6 +23,8 @@ html {
   scroll-behavior: smooth;
 }
 
+/* Mixin 1/2 ; boutons "Explorer nos restaurants + Commander */
+/* en tête, logo, pas de boutons retour */
 .header {
   padding: 1rem;
   position: relative;
@@ -38,6 +42,7 @@ html {
   margin: auto;
 }
 
+/* pied de pages */
 .footer {
   background-color: #353535;
   padding: 25px 20px 35px 25px;
@@ -80,6 +85,8 @@ html {
   margin-right: 8px;
 }
 
+/* Mixin 2/2 ; Boutons "like" (forme de coeur) */
+/* en tête, contenant logo + bouton retour */
 .header--buttonBack {
   position: relative;
 }
@@ -94,6 +101,7 @@ html {
   top: 21px;
 }
 
+/* images de fond */
 .cardImage {
   width: 100%;
 }
@@ -106,6 +114,7 @@ html {
   }
 }
 
+/* Les menus proposer + cartes */
 .menus {
   border-radius: 32px 32px 0 0;
   background-color: #f6f6f6;
@@ -193,6 +202,7 @@ html {
   }
 }
 
+/* animation popmenus */
 .menusCard {
   max-width: 100%;
   overflow: hidden;
@@ -228,6 +238,7 @@ html {
   bottom: 0;
 }
 
+/* Les assiettes, titres + prix + description */
 .menusItem {
   background-color: white;
   display: flex;
@@ -343,6 +354,7 @@ html {
   color: inherit;
 }
 
+/* animation chargement de l'index */
 .loader {
   position: fixed;
   height: 100%;
@@ -382,6 +394,7 @@ html {
   animation-delay: 0.5s;
 }
 
+/* partie localisation, exemple : Paris, Bellevile */
 .localisation {
   display: flex;
   justify-content: center;
@@ -451,6 +464,7 @@ html {
   color: inherit;
 }
 
+/* Fonctionnement */
 .operation {
   padding: 2rem 1rem;
 }
@@ -511,6 +525,7 @@ html {
   color: #7e7e7e;
 }
 
+/* selection restaurants */
 .restaurants {
   background-color: #f6f6f6;
   padding: 2rem 1rem;

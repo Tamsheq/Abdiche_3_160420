@@ -1,3 +1,5 @@
+/* animation chargement de l'index */
+
 .loader {
 	position: fixed;
 	height: 100%;
@@ -42,6 +44,8 @@
 	}
 }
 
+/* partie localisation, exemple : Paris, Bellevile */
+
 .localisation {
 	display: flex;
 	justify-content: center;
@@ -79,6 +83,8 @@
 		@include button;
 	}
 }
+
+/* Fonctionnement */
 
 .operation {
 	padding: 2rem $appPadding;
@@ -145,6 +151,8 @@
 		color: #7e7e7e;
 	}
 }
+
+/* selection restaurants */
 
 .restaurants {
 	background-color: #f6f6f6;

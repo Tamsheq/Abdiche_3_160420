@@ -1,5 +1,7 @@
 @use "sass:color";
 
+/* mes variables */
+
 $color-primary: #9356dc;
 $color-secondary: #ff79da;
 $color-tertiary: #99e2d0;
@@ -12,6 +14,8 @@ html {
 	font-family: "Roboto", sans-serif;
 	scroll-behavior: smooth;
 }
+
+/* Mixin 1/2 ; boutons "Explorer nos restaurants + Commander */
 
 @mixin button {
 	border: 0;
@@ -57,6 +61,8 @@ html {
 	}
 }
 
+/* en tête, logo, pas de boutons retour */
+
 .header {
 	padding: $appPadding;
 	position: relative;
@@ -74,6 +80,8 @@ html {
 	max-width: 1280px;
 	margin: auto;
 }
+
+/* pied de pages */
 
 .footer {
 	background-color: #353535;
@@ -123,6 +131,8 @@ html {
 		margin-right: 8px;
 	}
 }
+
+/* Mixin 2/2 ; Boutons "like" (forme de coeur) */
 
 @mixin likeButton {
 	.like_button {
