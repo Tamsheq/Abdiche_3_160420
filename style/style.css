@@ -256,6 +256,7 @@ html {
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
+  font-size: 15px;
 }
 .menusItem_price {
   display: flex;
