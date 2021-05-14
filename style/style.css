@@ -244,12 +244,18 @@ html {
 }
 .menusItem_header {
   flex: 1;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 .menusItem_title {
   margin: 0;
 }
 .menusItem_description {
   margin: 0;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 .menusItem_price {
   display: flex;

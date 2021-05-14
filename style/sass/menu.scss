@@ -136,6 +136,9 @@
 
     &_header {
         flex: 1;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
     }
 
     &_title {
@@ -144,6 +147,9 @@
 
     &_description {
         margin: 0;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
     }
 
     &_price {
