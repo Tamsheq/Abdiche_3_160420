@@ -350,7 +350,7 @@ html {
   left: 0;
   top: 0;
   background-color: rgba(255, 255, 255, 0.9);
-  animation: loader 0.01s;
+  animation: loader 0.65s;
   animation-delay: 1.75s;
   animation-fill-mode: both;
   z-index: 10000;
