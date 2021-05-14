@@ -257,6 +257,8 @@ html {
   text-overflow: ellipsis;
   overflow: hidden;
   font-size: 15px;
+  font-weight: 300;
+  color: #101010;
 }
 .menusItem_price {
   display: flex;
